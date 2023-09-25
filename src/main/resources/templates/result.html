@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Processing Result</title>
+</head>
+<body>
+    <h1>Excel Processing Result</h1>
+    
+    <!-- Display the sum of Hours -->
+    <p>Total Hours: <span th:text="${excelSummary.totalHours}"></span></p>
+    
+    <!-- Display the sum of Total -->
+    <p>Total Total: <span th:text="${excelSummary.totalTotal}"></span></p>
+    
+    <!-- Add more content or formatting as needed -->
+
+    <!-- Display any error message if applicable -->
+    <div th:if="${error}" class="error" th:text="${error}"></div>
+</body>
+</html>
